@@ -1,0 +1,477 @@
+.layout_content-ticketmanage {
+    position: relative;
+}
+
+.content-ticketmanage {
+    position: absolute;
+    width: 1567px;
+    height: 963px;
+    left: 122px;
+    top: 0px;
+
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+.content-ticketmanage_title {
+    position: absolute;
+    width: 100%;
+    height: 64px;
+    left: 24px;
+    top: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.content-ticketmanage_category {
+
+}
+
+.content-ticketmanage_category-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    position: absolute;
+    width: 446px;
+    height: 48px;
+    left: 24px;
+    top: 120px;
+    background: #F7F7F8;
+    border-radius: 8px;
+}
+
+.content-ticketmanage_category-filter {
+    position: absolute;
+    height: 26px;
+    top: 14%;
+    right: 11%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 10px;
+    padding: 18px;
+    color: #FF993C;
+    border: 2px solid #FF993C;
+}
+
+.content-ticketmanage_category-export {
+    position: absolute;
+    height: 26px;
+    top: 14%;
+    right: 1%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #FF993C;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 10px;
+    padding: 18px;
+    border: 2px solid #FF993C;
+}
+
+.content-ticketmanage_table {
+    position: absolute;
+    width: 1516px;
+    height: 48px;
+    left: 1.6%;
+    top: 22%;
+    background: #F1F4F8;
+    border-radius: 8px 8px 0px 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.content-ticketmanage_modal-filter {
+    position: relative;
+    width: 634px;
+    height: 454px;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.content-ticketmanage_modal-filter_header {
+    position: absolute;
+    width: 81px;
+    height: 30px;
+    left: 263px;
+    top: 24px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+}
+
+.content-ticketmanage_modal-filter_fromdate {
+    position: absolute;
+    width: 66px;
+    height: 26px;
+    left: 32px;
+    top: 81px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+}
+
+.content-ticketmanage_modal-filter_todate {
+    position: absolute;
+    width: 128px;
+    height: 26px;
+    left: 297px;
+    top: 80px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+}
+
+.content-ticketmanage_modal-filter_fromdate-calender {
+    position: absolute;
+    width: 140px;
+    height: 24px;
+    left: 4%;
+    top: 26%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.content-ticketmanage_modal-filter_todate-calender {
+    position: absolute;
+    width: 140px;
+    height: 24px;
+    right: 29%;
+    top: 26%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.content-ticketmanage_modal-filter_status {
+    position: absolute;
+    width: 159px;
+    height: 26px;
+    left: 32px;
+    top: 172px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.8;
+}
+
+.content-ticketmanage_modal-filter_radio {
+    position: absolute;
+    left: 6%;
+    top: 45%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+}
+
+.content-ticketmanage_modal-filter_check {
+    position: absolute;
+    width: 131px;
+    height: 26px;
+    left: 32px;
+    top: 247px;
+
+    /* 16 semibold */
+
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    display: flex;
+    align-items: center;
+
+    /* Text */
+
+    color: #1E0D03;
+
+    opacity: 0.8;
+}
+
+.content-ticketmanage_modal-filter_checkin {
+    position: absolute;
+    left: 6%;
+    top: 61%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1E0D03;
+    opacity: 0.7;
+}
+
+.content-ticketmanage_modal-filter_btn {
+    padding: 20px;
+    position: absolute;
+    width: 74px;
+    height: 26px;
+    left: 41.5%;
+    top: 87%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #FF993C;
+    border-color: #FF993C;
+}
+
+
+.content-ticketmanage_modal-changedate {
+    position: relative;
+    width: 758px;
+    height: 365px;
+    
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.content-ticketmanage_modal-changedate_header {
+    position: absolute;
+    width: 259px;
+    height: 30px;
+    left: 250px;
+    top: 24px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+}
+
+.content-ticketmanage_modal-changedate_tickettitle {
+    position: absolute;
+    width: 44px;
+    height: 26px;
+    left: 32px;
+    top: 81px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+}
+
+.content-ticketmanage_modal-changedate_ticketcode {
+    position: absolute;
+    width: 110px;
+    height: 20px;
+    left: 216px;
+    top: 84px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+}
+
+.content-ticketmanage_modal-changedate_ticketevent {
+    position: absolute;
+    width: 44px;
+    height: 26px;
+    left: 32px;
+    top: 124px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+}
+
+.content-ticketmanage_modal-changedate_gateevent {
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    left: 216px;
+    top: 127px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+}
+
+.content-ticketmanage_modal-changedate_nameevent {
+    position: absolute;
+    width: 94px;
+    height: 26px;
+    left: 32px;
+    top: 170px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+}
+
+.content-ticketmanage_modal-changedate_nameeventcode {
+    position: absolute;
+    width: 303px;
+    height: 20px;
+    left: 216px;
+    top: 173px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+}
+
+.content-ticketmanage_modal-changedate_expiry {
+    position: absolute;
+    width: 106px;
+    height: 26px;
+    left: 32px;
+    top: 220px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.8;
+}
+
+.content-ticketmanage_modal-changedate_todate-expirycalender {
+    position: absolute;
+    left: 26.7%;
+    top: 59%;  
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.content-ticketmanage_modal-changedate_btncancel {
+    padding: 20px;
+    position: absolute;
+    width: 74px;
+    height: 26px;
+    left: 38%;
+    top: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #FF993C;
+    border-color: #FF993C;
+}
+
+.content-ticketmanage_modal-changedate_btnsave {
+    padding: 20px;
+    position: absolute;
+    width: 74px;
+    height: 26px;
+    left: 50%;
+    top: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border-color: #FF993C;
+    background-color: #FF993C;
+}

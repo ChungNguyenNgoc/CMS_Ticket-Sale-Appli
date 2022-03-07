@@ -1,0 +1,604 @@
+.layout_content-setting {
+    position: relative;
+}
+
+.content-setting {
+    position: absolute;
+    width: 1567px;
+    height: 963px;
+    left: 122px;
+    top: 0px;
+
+    background: #FFFFFF;
+    border-radius: 24px;
+}
+
+.content-setting_title {
+    position: absolute;
+    width: 100%;
+    height: 64px;
+    left: 24px;
+    top: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.content-setting_category {
+
+}
+
+.content-setting_category-search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 16px;
+    position: absolute;
+    width: 446px;
+    height: 48px;
+    left: 24px;
+    top: 120px;
+    background: #F7F7F8;
+    border-radius: 8px;
+}
+
+.content-setting_category-filter {
+    position: absolute;
+    height: 26px;
+    top: 14%;
+    right: 11%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #FF993C;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 10px;
+    padding: 18px;
+    border: 2px solid #FF993C;
+}
+
+.content-setting_category-export {
+    position: absolute;
+    height: 26px;
+    top: 14%;
+    right: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #FF993C;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 10px;
+    padding: 18px;
+    border: 2px solid #FF993C;
+}
+
+.content-setting_table {
+    position: absolute;
+    width: 1516px;
+    height: 48px;
+    left: 1.6%;
+    top: 22%;
+    background: #F1F4F8;
+    border-radius: 8px 8px 0px 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.content-setting_category-addticket {
+    position: absolute;
+    height: 26px;
+    top: 14%;
+    right: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #FF993C;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 10px;
+    padding: 18px;
+    border: 2px solid #FF993C;
+}
+
+.content-setting_modal-update {
+    position: relative;
+    width: 758px;
+    height: 628px;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+}
+
+.content-setting_modal-update_header {
+    position: absolute;
+    width: 321px;
+    height: 30px;
+    left: 220px;
+    top: 24px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+}
+
+.content-setting_modal-update_titlecode {
+    position: absolute;
+    width: 89px;
+    height: 26px;
+    left: 32px;
+    top: 81px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+}
+
+.content-setting_modal-update_titlestart {
+    position: absolute;
+    width: 7px;
+    height: 26px;
+    left: 125px;
+    top: 84px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #FD5959;
+}
+
+.content-setting_modal-update_titlename {
+    position: absolute;
+    width: 103px;
+    height: 26px;
+    left: 359px;
+    top: 81px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+}
+
+.content-setting_modal-update_eventcode {
+    position: absolute;
+    padding: 18px;
+    width: 200px;
+    height: 20px;
+    left: 4%;
+    top: 18%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+}
+
+.content-setting_modal-update_eventname {
+    position: absolute;
+    padding: 18px;
+    width: 360px;
+    height: 20px;
+    right: 5%;
+    top: 18%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+}
+
+.content-setting_modal-update_fromdate {
+    position: absolute;
+    width: 117px;
+    height: 26px;
+    left: 32px;
+    top: 177px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+}
+
+.content-setting_modal-update_todate {
+    position: absolute;
+    width: 128px;
+    height: 26px;
+    left: 359px;
+    top: 176px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+}
+
+.content-setting_modal-update_fromdate-calender {
+    position: absolute;
+    width: 130px;
+    left: 2.7%;
+    top: 34%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.content-setting_modal-update_todate-calender {
+    position: absolute;
+    width: 130px;
+    left: 46%;
+    top: 34%;  
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.content-setting_modal-update_fromtime-calender {
+    position: absolute;
+    width: 130px;
+    left: 20.6%;
+    top: 34%;  
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.content-setting_modal-update_totime-calender {
+    position: absolute;
+    width: 130px;
+    left: 64%;
+    top: 34%;  
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.content-setting_modal-update_pricetitle {
+    position: absolute;
+    width: 124px;
+    height: 26px;
+    left: 32px;
+    top: 272px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+}
+
+.content-setting_modal-update_checkbox {
+    position: absolute;
+    font-size: 16px;
+    width: 200px;
+    height: 24px;
+    left: 3.4%;
+    top: 49%;
+    background: #FFFFFF;
+    border-radius: 5px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+    opacity: 0.8;
+}
+
+.content-setting_modal-update_combocheckbox {
+    position: absolute;
+    font-size: 16px;
+    width: 200px;
+    height: 24px;
+    left: 3.4%;
+    top: 58%;
+    background: #FFFFFF;
+    border-radius: 5px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+    opacity: 0.8;
+}
+
+.content-setting_modal-update_priceinput {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 12px;
+    position: absolute;
+    width: 148px;
+    height: 40px;
+    left: 28%;
+    top: 47.5%;
+    background: #F1F4F8;
+    border-radius: 8px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+.content-setting_modal-update_oneticket {
+    position: absolute;
+    width: 29px;
+    height: 20px;
+    left: 48%;
+    top: 49.7%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+.content-setting_modal-update_combopriceinput {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 12px;
+    position: absolute;
+    width: 148px;
+    height: 40px;
+    left: 24.5%;
+    top: 56.4%;
+    background: #F1F4F8;
+    border-radius: 8px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+.content-setting_modal-update_slash {
+    position: absolute;
+    width: 29px;
+    height: 20px;
+    left: 45%;
+    top: 58.5%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+.content-setting_modal-update_comboticketinput {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 12px;
+    position: absolute;
+    width: 86px;
+    height: 40px;
+    left: 47%;
+    top: 56.4%;
+    background: #F1F4F8;
+    border-radius: 8px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+.content-setting_modal-update_ticket {
+    position: absolute;
+    width: 29px;
+    height: 20px;
+    left: 59.5%;
+    top: 58.5%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+.content-setting_modal-update_statustitle {
+    position: absolute;
+    width: 94px;
+    height: 26px;
+    left: 32px;
+    top: 419px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+}
+
+.content-setting_modal-update_statusselect {
+    position: absolute;
+    width: 136px;
+    height: 22px;
+    left: 4%;
+    top: 74%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.content-setting_modal-update_start {
+    position: absolute;
+    width: 7px;
+    height: 26px;
+    left: 4%;
+    top: 82%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #FD5959;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 4px;
+}
+
+.content-setting_modal-update_note {
+    position: absolute;
+    width: 129px;
+    height: 15px;
+    left: 6%;
+    top: 82.2%;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;   
+    opacity: 0.6;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 4px;
+}
+
+.content-ticketmanage_modal-update_btncancel {
+    padding: 20px;
+    position: absolute;
+    width: 74px;
+    height: 26px;
+    left: 38%;
+    top: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #FF993C;
+    border-color: #FF993C;
+}
+
+.content-ticketmanage_modal-update_btnsave {
+    padding: 20px;
+    position: absolute;
+    width: 74px;
+    height: 26px;
+    left: 50%;
+    top: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border-color: #FF993C;
+    background-color: #FF993C;
+}
+

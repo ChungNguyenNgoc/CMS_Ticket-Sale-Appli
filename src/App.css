@@ -1,5 +1,13 @@
+@import "antd/dist/antd.css";
+
 .App {
-  text-align: center;
+  width: 1920px;
+  height: 1080px;
+  bottom: 2724px;
+  top: -3714px;
+  background: #F9F6F4;
+  border-radius: 24px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .App-logo {
