@@ -45,7 +45,7 @@
 
 .content-home_chart {
     position: absolute;
-    width: 100%;
+    width: 98%;
     height: 300px;
     left: 1%;
     top: 18%;
@@ -89,4 +89,91 @@
     font-size: 14px;
     line-height: 22px;
     color: #1E0D03;
+}
+
+.content-home_calender-donut {
+    position: absolute;
+    width: 140px;
+    height: 24px;
+    left: 1%;
+    top: 62%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.content-home_calender-chart {
+    position: absolute;
+    width: 140px;
+    height: 24px;
+    right: 3.5%;
+    top: 11.5%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #1E0D03;
+    opacity: 0.7;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.content-home_donut {
+    position: absolute;
+    display: flex;
+    width: 246px;
+    height: 246px;
+    left: 20%;
+    top: 70%;
+}
+
+.content-home_donut-fist {
+    position: absolute;
+    width: 112px;
+    height: 28px;
+    left: 26.2%;
+    top: 63%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #1E0D03;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+
+.content-home_donut-second {
+    position: absolute;
+    width: 112px;
+    height: 28px;
+    left: 52.2%;
+    top: 63%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #1E0D03;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+
+.ant-menu-inline {
+    border-right: none;
 }

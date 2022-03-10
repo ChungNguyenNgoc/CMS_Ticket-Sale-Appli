@@ -1,6 +1,7 @@
 
 import { FilterOutlined, EditOutlined } from '@ant-design/icons';
-import {Layout, Input, Button, Table, Tag, Space, DatePicker, TimePicker, Checkbox, Select} from 'antd';
+import { useState } from 'react';
+import {Layout, Input, Button, Table, Tag, Space, DatePicker, TimePicker, Checkbox, Select, Modal} from 'antd';
 import moment from 'moment';
 import '../ticketsetting/Setting.css'
 const { Content } = Layout;
@@ -95,18 +96,105 @@ const columns = [
         dataIndex: 'update',
         key: 'update',
         render: (update: any) => (
-            <Button icon={<EditOutlined />} style={{color: '#FF993C', border: 'none'}} key={update}>
-            {update.toUpperCase()}
-            </Button>
+            <>
+                <ModalUpdate key={update}/>
+            </>
+            
         )
     },
 ];
 
 const { Option } = Select;
 
+const ModalUpdate = () => {
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
+    const showModal = () => {
+        setIsModalVisible(true);
+    }
+
+    const handleOk = () => {
+        setIsModalVisible(false);
+    }
+
+    const handleCancel = () => {
+        setIsModalVisible(false);
+    }
+
+    function onChange(e: any) {
+        console.log(`checked = ${e.target.checked}`);
+    }
+
+    function handleChange(value: any) {
+        console.log(`selected ${value}`);
+    }
+
+    return (
+        <>
+
+            <Button onClick={showModal} icon={<EditOutlined />} style={{color: '#FF993C', border: 'none'}}>
+                {/*  {update.toUpperCase()} */}
+                Cập nhật
+            </Button>
+            <Modal width={'784px'} footer={null} visible={isModalVisible} onCancel={handleCancel}>
+                <Content className="content-setting_modal-update">
+                    <h3 className="content-setting_modal-update_header">Cập nhật thông tin gói vé</h3>
+                    <span className="content-setting_modal-update_titlecode">Mã sự kiện</span>
+                    <span className="content-setting_modal-update_titlestart">*</span>
+                    <span className="content-setting_modal-update_titlename">Tên sự kiện</span>
+                    <Input className="content-setting_modal-update_eventcode" placeholder="PKG20210502" />
+                    <Input className="content-setting_modal-update_eventname" placeholder="Hội chợ triển lãm hàng tiêu dùng 2021" />
+                    <span className="content-setting_modal-update_fromdate">Ngày áp dụng</span>
+                    <span className="content-setting_modal-update_todate">Ngày hết hạn</span>
+                    <Space className="content-setting_modal-update_fromdate-calender" direction="vertical" size={12}>
+                        <DatePicker defaultValue={moment('01/01/2015', dateFormatList[0])} format={dateFormatList} />
+                    </Space>
+                    <TimePicker className="content-setting_modal-update_fromtime-calender" defaultValue={moment('12:08:23', 'HH:mm:ss')} />
+                    <Space className="content-setting_modal-update_todate-calender" direction="vertical" size={12}>
+                        <DatePicker defaultValue={moment('01/01/2015', dateFormatList[0])} format={dateFormatList} />
+                    </Space> 
+                    <TimePicker className="content-setting_modal-update_totime-calender" defaultValue={moment('12:08:23', 'HH:mm:ss')} />
+                    <span className="content-setting_modal-update_pricetitle">Giá vé áp dụng</span>
+                    <Checkbox className="content-setting_modal-update_checkbox" onChange={onChange}>Vé lẻ (vnđ/vé) với giá</Checkbox>
+                    <Input className="content-setting_modal-update_priceinput" placeholder="Giá vé" />
+                    <span className="content-setting_modal-update_oneticket"> / vé</span>
+                    <Checkbox className="content-setting_modal-update_combocheckbox" onChange={onChange}>Combo vé với giá</Checkbox>
+                    <Input className="content-setting_modal-update_combopriceinput" placeholder="Giá vé" />
+                    <span className="content-setting_modal-update_slash"> / </span>
+                    <Input className="content-setting_modal-update_comboticketinput" placeholder="Số lượng" />
+                    <span className="content-setting_modal-update_ticket"> vé </span>
+                    <span className="content-setting_modal-update_statustitle">Tình trạng</span>
+                    <Select className="content-setting_modal-update_statusselect" defaultValue="lucy" onChange={handleChange}>
+                        <Option value="jack">Đã áp dụng</Option>
+                        <Option value="lucy">Tắt</Option>
+                    </Select>
+                    <span className="content-setting_modal-update_start">*</span>
+                    <span className="content-setting_modal-update_note">là thông tin bắt buộc</span>
+                    <Button onClick={handleCancel} className="content-ticketmanage_modal-update_btncancel">Hủy</Button>
+                    <Button onClick={handleOk} className="content-ticketmanage_modal-update_btnsave">Lưu</Button>
+                </Content>
+            </Modal>
+        </>
+    )
+}
 
 
 export const Setting = () => {
+
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
+    const showModal = () => {
+        setIsModalVisible(true);
+    }
+
+    const handleOk = () => {
+        setIsModalVisible(false);
+    }
+
+    const handleCancel = () => {
+        setIsModalVisible(false);
+    }
+
     function onChange(e: any) {
         console.log(`checked = ${e.target.checked}`);
     }
@@ -122,11 +210,51 @@ export const Setting = () => {
                     <div className="content-setting_category">
                         <Input className="content-setting_category-search" placeholder='Tìm bảng số vé'/>
                         <Button icon={<FilterOutlined className="content-setting_category-filter--icon" />}  className="content-setting_category-filter">Lộc vé</Button>
-                        <Button className="content-setting_category-addticket">Thêm gói vé</Button>
+                        <Button onClick={showModal} className="content-setting_category-addticket">Thêm gói vé</Button>
                     </div>
                     <Table className='content-setting_table' dataSource={dataSource} columns={columns} />
 
-                    <div className="modal">
+                    
+                    <Modal width={'784px'} footer={null} visible={isModalVisible} onCancel={handleCancel}>
+                        <Content className="content-setting_modal-update">
+                            <h3 style={{left: '39%'}} className="content-setting_modal-update_header">Thêm gói vé</h3>
+                            <span className="content-setting_modal-update_titlecode">Mã sự kiện</span>
+                            <span className="content-setting_modal-update_titlestart">*</span>
+                            <span className="content-setting_modal-update_titlename">Tên sự kiện</span>
+                            <Input className="content-setting_modal-update_eventcode" placeholder="PKG20210502" />
+                            <Input className="content-setting_modal-update_eventname" placeholder="Hội chợ triển lãm hàng tiêu dùng 2021" />
+                            <span className="content-setting_modal-update_fromdate">Ngày áp dụng</span>
+                            <span className="content-setting_modal-update_todate">Ngày hết hạn</span>
+                            <Space className="content-setting_modal-update_fromdate-calender" direction="vertical" size={12}>
+                                <DatePicker defaultValue={moment('01/01/2015', dateFormatList[0])} format={dateFormatList} />
+                            </Space>
+                            <TimePicker className="content-setting_modal-update_fromtime-calender" defaultValue={moment('12:08:23', 'HH:mm:ss')} />
+                            <Space className="content-setting_modal-update_todate-calender" direction="vertical" size={12}>
+                                <DatePicker defaultValue={moment('01/01/2015', dateFormatList[0])} format={dateFormatList} />
+                            </Space> 
+                            <TimePicker className="content-setting_modal-update_totime-calender" defaultValue={moment('12:08:23', 'HH:mm:ss')} />
+                            <span className="content-setting_modal-update_pricetitle">Giá vé áp dụng</span>
+                            <Checkbox className="content-setting_modal-update_checkbox" onChange={onChange}>Vé lẻ (vnđ/vé) với giá</Checkbox>
+                            <Input className="content-setting_modal-update_priceinput" placeholder="Giá vé" />
+                            <span className="content-setting_modal-update_oneticket"> / vé</span>
+                            <Checkbox className="content-setting_modal-update_combocheckbox" onChange={onChange}>Combo vé với giá</Checkbox>
+                            <Input className="content-setting_modal-update_combopriceinput" placeholder="Giá vé" />
+                            <span className="content-setting_modal-update_slash"> / </span>
+                            <Input className="content-setting_modal-update_comboticketinput" placeholder="Số lượng" />
+                            <span className="content-setting_modal-update_ticket"> vé </span>
+                            <span className="content-setting_modal-update_statustitle">Tình trạng</span>
+                            <Select className="content-setting_modal-update_statusselect" defaultValue="lucy" onChange={handleChange}>
+                                <Option value="jack">Đã áp dụng</Option>
+                                <Option value="lucy">Tắt</Option>
+                            </Select>
+                            <span className="content-setting_modal-update_start">*</span>
+                            <span className="content-setting_modal-update_note">là thông tin bắt buộc</span>
+                            <Button onClick={handleCancel} className="content-ticketmanage_modal-update_btncancel">Hủy</Button>
+                            <Button onClick={handleOk} className="content-ticketmanage_modal-update_btnsave">Lưu</Button>
+                        </Content>
+                    </Modal>
+
+                    {/* <div className="modal">
                         <div className="modal__overlay">
                         </div>
                         <div className="modal__body">
@@ -169,7 +297,7 @@ export const Setting = () => {
 
                             </Content>
                         </div>
-                    </div>
+                    </div> */}
                     {/* <div className="modal">
                         <div className="modal__overlay">
                         </div>

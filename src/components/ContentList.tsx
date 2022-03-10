@@ -14,9 +14,9 @@ export const ContentList = () => {
                 <Layout style={{background: '#f9f6f4'}}>
                     <Navbar/>
                     {/* <Home /> */}
+                    {/* <TicketManage/> */}
                     {/* <TicketChange/> */}
-                    <TicketManage/>
-                    {/* <Setting/> */}
+                    <Setting/>
                 </Layout>
             </Layout>
         </div>

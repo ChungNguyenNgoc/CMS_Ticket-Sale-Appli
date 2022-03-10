@@ -112,6 +112,15 @@
     border-radius: 16px;
 }
 
+.content-ticketmanage_modal {
+    position: relative;
+    width: 634px;
+    height: 454px;
+
+    background: #FFFFFF;
+    border-radius: 16px;
+} 
+
 .content-ticketmanage_modal-filter_header {
     position: absolute;
     width: 81px;
