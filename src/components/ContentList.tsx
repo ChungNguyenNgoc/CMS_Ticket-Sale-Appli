@@ -5,6 +5,7 @@ import { TicketManage } from './contentitem/ticketmanage/TicketManage';
 import { Setting } from './contentitem/ticketsetting/Setting';
 import {TicketChange} from './contentitem/ticketchange/TicketChange'
 import { Content } from 'antd/lib/layout/layout';
+import { Outlet } from 'react-router-dom';
 
 
 export const ContentList = () => {
@@ -16,7 +17,9 @@ export const ContentList = () => {
                     {/* <Home /> */}
                     {/* <TicketManage/> */}
                     {/* <TicketChange/> */}
-                    <Setting/>
+                    {/* <Setting/> */}
+                    <Outlet />
+
                 </Layout>
             </Layout>
         </div>
