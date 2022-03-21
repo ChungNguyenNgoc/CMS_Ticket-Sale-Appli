@@ -4,10 +4,14 @@ import './Home.css'
 import React, { useState, useEffect } from 'react';
 import moment from 'moment';
 import { Area } from '@ant-design/plots';
+import {test} from '../../../firebase/tickets';
+
+
 const { Content } = Layout;
 const dateFormatList = ['DD/MM/YYYY', 'DD/MM/YY'];
 
 export const Home = () => {
+    console.log(test)
     const DemoArea = () => {
         const [data, setData] = useState([]);
     
@@ -45,7 +49,6 @@ export const Home = () => {
     
         return <Area {...config} />;
     };
-
     const DemoPie = () => {
         const data = [
           {
