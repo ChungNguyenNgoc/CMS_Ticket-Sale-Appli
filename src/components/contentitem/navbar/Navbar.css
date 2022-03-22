@@ -62,10 +62,32 @@
 
 .navbar_item:hover {
     color: #fff !important;
-    background: #FFB800;
+    background: #FFB800 !important;
+}
+
+.navbar_item a:hover {
+    color: #fff !important;
 }
 
 .navbar_icon {
     font-weight: 480;
     font-size: 20px;
 }
+
+.ant-menu-item-selected::after {
+    display: none;
+}
+
+.ant-menu-item-selected {
+    color: #fff !important;
+    background: #FFB800 !important;
+}
+
+.ant-menu-item-selected a {
+    color: #fff !important;
+}
+
+
+
+
+

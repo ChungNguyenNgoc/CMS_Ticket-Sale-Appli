@@ -1,5 +1,9 @@
 @import "antd/dist/antd.css";
 
+.ant-picker-suffix {
+  color: #FF993C;
+}
+
 .App {
   width: 1920px;
   height: 1080px;

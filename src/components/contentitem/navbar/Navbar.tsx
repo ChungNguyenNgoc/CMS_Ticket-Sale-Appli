@@ -2,7 +2,7 @@ import {Layout, Menu} from 'antd';
 import {EditOutlined, FolderAddOutlined, HomeOutlined, SettingOutlined, ShakeOutlined} from '@ant-design/icons';
 import SubMenu from 'antd/lib/menu/SubMenu';
 import './Navbar.css'
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const {Sider} = Layout;
 
 const MenuList = [
