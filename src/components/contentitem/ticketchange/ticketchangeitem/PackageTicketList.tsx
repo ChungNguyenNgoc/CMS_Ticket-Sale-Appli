@@ -11,7 +11,15 @@ const dataSource = [
         date: '14/04/2021',
         ticketTypeName: 'Vé cổng',
         checkInGate: 'Cổng 1',
-        status: 'Chưa đối soát',
+        status: true,
+    },
+    {
+        stt: '1',
+        ticketNumber: '205314876321',
+        date: '14/04/2021',
+        ticketTypeName: 'Vé cổng',
+        checkInGate: 'Cổng 1',
+        status: false,
     },
 
 ];
@@ -46,6 +54,13 @@ const columns = [
         title: '',
         dataIndex: 'status',
         key: 'status',
+        render: (status: boolean) => {
+            if(status === true) {
+                return <span style={{color: '#FD5959'}}>Đã đổi soát</span>
+            } else {
+                return <span style={{color: '#A5A8B1'}}>Chưa đổi soát</span>
+            }
+        },
     },
 ];
 

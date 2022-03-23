@@ -4,16 +4,17 @@ import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA4nb_j3egL2tSHaZo0bQW_nae_01PRm6Q",
-  authDomain: "ticket-test-b6138.firebaseapp.com",
-  projectId: "ticket-test-b6138",
-  storageBucket: "ticket-test-b6138.appspot.com",
-  messagingSenderId: "405431770716",
-  appId: "1:405431770716:web:f562ef3021f5e992e7d099"
+  apiKey: "AIzaSyAWn3F7bkJzr-PEd6f7z1tBlnvQ8BDczHc",
+  authDomain: "cms-ticket-sale-e8ce0.firebaseapp.com",
+  projectId: "cms-ticket-sale-e8ce0",
+  storageBucket: "cms-ticket-sale-e8ce0.appspot.com",
+  messagingSenderId: "882817945292",
+  appId: "1:882817945292:web:9282e438d473cb56343c69",
+  measurementId: "G-KLZC9DK797"
 };
 
 const store = firebase.initializeApp(firebaseConfig).firestore()
-const taskStore = store.collection('tickets')
+const taskStore = store.collection('TicketManage')
 
 export const test = async() => {
       await taskStore.get().then(

@@ -22,7 +22,7 @@ const dataSource = [
     {
         stt: '1',
         packageCode: 'ALT20210501',
-        ticketName: 'Gói gia đình',
+        ticketName: 'Gói sự kiện',
         date: '14/04/2021 08:00:00',
         exDate: '14/04/2021 23:00:00',
         ticketPrice: '90.000 VNĐ',
