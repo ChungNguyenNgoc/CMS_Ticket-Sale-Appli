@@ -484,3 +484,21 @@
     border-color: #FF993C;
     background-color: #FF993C;
 }
+
+.ant-tag-geekblue {
+    color: #919DBA;
+    background: #EAF1F8;
+    border: 1px solid #919DBA;
+}
+
+.ant-tag-green {
+    color: #03AC00;
+    background: #DEF7E0;
+    border: 1px solid #03AC00;
+}
+
+.ant-tag-red {
+    color: #FD5959;
+    background: #F8EBE8;
+    border: 1px solid #FD5959;
+}

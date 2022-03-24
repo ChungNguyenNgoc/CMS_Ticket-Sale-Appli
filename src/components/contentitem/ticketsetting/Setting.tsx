@@ -3,7 +3,9 @@ import { FilterOutlined, EditOutlined } from '@ant-design/icons';
 import { useState } from 'react';
 import {Layout, Input, Button, Table, Tag, Space, DatePicker, TimePicker, Checkbox, Select, Modal} from 'antd';
 import moment from 'moment';
-import '../ticketsetting/Setting.css'
+import '../ticketsetting/Setting.css';
+import {GoPrimitiveDot} from 'react-icons/go';
+
 const { Content } = Layout;
 const dateFormatList = ['DD/MM/YYYY', 'DD/MM/YY'];
 
@@ -84,7 +86,7 @@ const columns = [
             }
             return (
                 <Tag color={color} key={tag}>
-                {tag.toUpperCase()}
+                <GoPrimitiveDot />{tag.toUpperCase()}
                 </Tag>
             );
             })}
@@ -132,10 +134,10 @@ const ModalUpdate = () => {
     return (
         <>
 
-            <Button onClick={showModal} icon={<EditOutlined />} style={{color: '#FF993C', border: 'none'}}>
-                {/*  {update.toUpperCase()} */}
+            <span onClick={showModal} style={{color: '#FF993C', border: 'none', cursor: 'pointer'}}>
+                <EditOutlined />
                 Cập nhật
-            </Button>
+            </span>
             <Modal width={'784px'} footer={null} visible={isModalVisible} onCancel={handleCancel}>
                 <Content className="content-setting_modal-update">
                     <h3 className="content-setting_modal-update_header">Cập nhật thông tin gói vé</h3>
@@ -253,95 +255,6 @@ export const Setting = () => {
                             <Button onClick={handleOk} className="content-ticketmanage_modal-update_btnsave">Lưu</Button>
                         </Content>
                     </Modal>
-
-                    {/* <div className="modal">
-                        <div className="modal__overlay">
-                        </div>
-                        <div className="modal__body">
-                            <Content className="content-setting_modal-update">
-                                <h3 className="content-setting_modal-update_header">Cập nhật thông tin gói vé</h3>
-                                <span className="content-setting_modal-update_titlecode">Mã sự kiện</span>
-                                <span className="content-setting_modal-update_titlestart">*</span>
-                                <span className="content-setting_modal-update_titlename">Tên sự kiện</span>
-                                <Input className="content-setting_modal-update_eventcode" placeholder="PKG20210502" />
-                                <Input className="content-setting_modal-update_eventname" placeholder="Hội chợ triển lãm hàng tiêu dùng 2021" />
-                                <span className="content-setting_modal-update_fromdate">Ngày áp dụng</span>
-                                <span className="content-setting_modal-update_todate">Ngày hết hạn</span>
-                                <Space className="content-setting_modal-update_fromdate-calender" direction="vertical" size={12}>
-                                    <DatePicker defaultValue={moment('01/01/2015', dateFormatList[0])} format={dateFormatList} />
-                                </Space>
-                                <TimePicker className="content-setting_modal-update_fromtime-calender" defaultValue={moment('12:08:23', 'HH:mm:ss')} />
-                                <Space className="content-setting_modal-update_todate-calender" direction="vertical" size={12}>
-                                    <DatePicker defaultValue={moment('01/01/2015', dateFormatList[0])} format={dateFormatList} />
-                                </Space> 
-                                <TimePicker className="content-setting_modal-update_totime-calender" defaultValue={moment('12:08:23', 'HH:mm:ss')} />
-                                <span className="content-setting_modal-update_pricetitle">Giá vé áp dụng</span>
-                                <Checkbox className="content-setting_modal-update_checkbox" onChange={onChange}>Vé lẻ (vnđ/vé) với giá</Checkbox>
-                                <Input className="content-setting_modal-update_priceinput" placeholder="Giá vé" />
-                                <span className="content-setting_modal-update_oneticket"> / vé</span>
-                                <Checkbox className="content-setting_modal-update_combocheckbox" onChange={onChange}>Combo vé với giá</Checkbox>
-                                <Input className="content-setting_modal-update_combopriceinput" placeholder="Giá vé" />
-                                <span className="content-setting_modal-update_slash"> / </span>
-                                <Input className="content-setting_modal-update_comboticketinput" placeholder="Số lượng" />
-                                <span className="content-setting_modal-update_ticket"> vé </span>
-                                <span className="content-setting_modal-update_statustitle">Tình trạng</span>
-                                <Select className="content-setting_modal-update_statusselect" defaultValue="lucy" onChange={handleChange}>
-                                    <Option value="jack">Đã áp dụng</Option>
-                                    <Option value="lucy">Tắt</Option>
-                                </Select>
-                                <span className="content-setting_modal-update_start">*</span>
-                                <span className="content-setting_modal-update_note">là thông tin bắt buộc</span>
-                                <Button className="content-ticketmanage_modal-update_btncancel">Hủy</Button>
-                                <Button className="content-ticketmanage_modal-update_btnsave">Lưu</Button>
-
-
-                            </Content>
-                        </div>
-                    </div> */}
-                    {/* <div className="modal">
-                        <div className="modal__overlay">
-                        </div>
-                        <div className="modal__body">
-                            <Content className="content-setting_modal-update">
-                                <h3 style={{left: '39%'}} className="content-setting_modal-update_header">Thêm gói vé</h3>
-                                <span className="content-setting_modal-update_titlecode">Mã sự kiện</span>
-                                <span className="content-setting_modal-update_titlestart">*</span>
-                                <span className="content-setting_modal-update_titlename">Tên sự kiện</span>
-                                <Input className="content-setting_modal-update_eventcode" placeholder="PKG20210502" />
-                                <Input className="content-setting_modal-update_eventname" placeholder="Hội chợ triển lãm hàng tiêu dùng 2021" />
-                                <span className="content-setting_modal-update_fromdate">Ngày áp dụng</span>
-                                <span className="content-setting_modal-update_todate">Ngày hết hạn</span>
-                                <Space className="content-setting_modal-update_fromdate-calender" direction="vertical" size={12}>
-                                    <DatePicker defaultValue={moment('01/01/2015', dateFormatList[0])} format={dateFormatList} />
-                                </Space>
-                                <TimePicker className="content-setting_modal-update_fromtime-calender" defaultValue={moment('12:08:23', 'HH:mm:ss')} />
-                                <Space className="content-setting_modal-update_todate-calender" direction="vertical" size={12}>
-                                    <DatePicker defaultValue={moment('01/01/2015', dateFormatList[0])} format={dateFormatList} />
-                                </Space> 
-                                <TimePicker className="content-setting_modal-update_totime-calender" defaultValue={moment('12:08:23', 'HH:mm:ss')} />
-                                <span className="content-setting_modal-update_pricetitle">Giá vé áp dụng</span>
-                                <Checkbox className="content-setting_modal-update_checkbox" onChange={onChange}>Vé lẻ (vnđ/vé) với giá</Checkbox>
-                                <Input className="content-setting_modal-update_priceinput" placeholder="Giá vé" />
-                                <span className="content-setting_modal-update_oneticket"> / vé</span>
-                                <Checkbox className="content-setting_modal-update_combocheckbox" onChange={onChange}>Combo vé với giá</Checkbox>
-                                <Input className="content-setting_modal-update_combopriceinput" placeholder="Giá vé" />
-                                <span className="content-setting_modal-update_slash"> / </span>
-                                <Input className="content-setting_modal-update_comboticketinput" placeholder="Số lượng" />
-                                <span className="content-setting_modal-update_ticket"> vé </span>
-                                <span className="content-setting_modal-update_statustitle">Tình trạng</span>
-                                <Select className="content-setting_modal-update_statusselect" defaultValue="lucy" onChange={handleChange}>
-                                    <Option value="jack">Đã áp dụng</Option>
-                                    <Option value="lucy">Tắt</Option>
-                                </Select>
-                                <span className="content-setting_modal-update_start">*</span>
-                                <span className="content-setting_modal-update_note">là thông tin bắt buộc</span>
-                                <Button className="content-ticketmanage_modal-update_btncancel">Hủy</Button>
-                                <Button className="content-ticketmanage_modal-update_btnsave">Lưu</Button>
-
-
-                            </Content>
-                        </div>
-                    </div> */}
                 </Content>
             </Layout>
         </div>

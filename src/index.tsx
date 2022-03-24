@@ -8,6 +8,8 @@ import { Home } from './components/contentitem/home/Home';
 import { TicketManage } from './components/contentitem/ticketmanage/TicketManage';
 import { TicketChange } from './components/contentitem/ticketchange/TicketChange';
 import { Setting } from './components/contentitem/ticketsetting/Setting';
+import { Layout } from 'antd';
+import { Content } from 'antd/lib/layout/layout';
 
 
 ReactDOM.render(
@@ -19,7 +21,13 @@ ReactDOM.render(
                     <Route path='ticketmanage' element={<TicketManage />}/>
                     <Route path='ticketchange' element={<TicketChange />}/>
                     <Route path='setting' element={<Setting />}/>
-                    <Route path='service' element={<h2>Not Found</h2>}/>
+                    <Route path='service' element={
+                        <Layout className="layout_content-ticketmanage">
+                            <Content className="content-ticketmanage">
+                                <h2 className="content-ticketmanage_title">Not Found</h2>  
+                            </Content>
+                        </Layout>
+                    }/>
                 </Route>
             </Routes>    
         </BrowserRouter>
