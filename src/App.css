@@ -4,6 +4,28 @@
   color: #FF993C;
 }
 
+.ant-table-pagination.ant-pagination {
+  margin: 16px 0;
+  justify-content: center;
+  color: #FF993C;
+}
+
+.ant-pagination-item-active {
+  font-weight: 500;
+  background: #fff;
+  border-color: #FF993C;
+}
+
+.ant-pagination-item-active a {
+  color: #FF993C;
+}
+
+.ant-table-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+
 .App {
   width: 1920px;
   height: 1080px;
