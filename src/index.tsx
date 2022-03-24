@@ -22,11 +22,11 @@ ReactDOM.render(
                     <Route path='ticketchange' element={<TicketChange />}/>
                     <Route path='setting' element={<Setting />}/>
                     <Route path='service' element={
-                        <Layout className="layout_content-ticketmanage">
+                        <div className="layout_content-ticketmanage">
                             <Content className="content-ticketmanage">
                                 <h2 className="content-ticketmanage_title">Not Found</h2>  
                             </Content>
-                        </Layout>
+                        </div>
                     }/>
                 </Route>
             </Routes>    

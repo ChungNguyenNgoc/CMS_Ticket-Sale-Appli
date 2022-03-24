@@ -32,5 +32,4 @@ export const setting = async() => {
       .catch((err) => console.log(err));
 }
 
-console.log(setting())
 

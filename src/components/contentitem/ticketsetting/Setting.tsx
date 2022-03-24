@@ -1,10 +1,12 @@
 
 import { FilterOutlined, EditOutlined } from '@ant-design/icons';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {Layout, Input, Button, Table, Tag, Space, DatePicker, TimePicker, Checkbox, Select, Modal} from 'antd';
 import moment from 'moment';
 import '../ticketsetting/Setting.css';
 import {GoPrimitiveDot} from 'react-icons/go';
+import {setting} from '../../../firebase/Setting';
+import { values } from '@antv/util';
 
 const { Content } = Layout;
 const dateFormatList = ['DD/MM/YYYY', 'DD/MM/YY'];
@@ -22,7 +24,7 @@ const dataSource = [
         update: 'Cập nhật'
     },
     {
-        stt: '1',
+        stt: '2',
         packageCode: 'ALT20210501',
         ticketName: 'Gói sự kiện',
         date: '14/04/2021 08:00:00',
@@ -180,8 +182,11 @@ const ModalUpdate = () => {
     )
 }
 
+const data = Object.keys(setting).map((index: any) => {
+ 
+})
 
-export const Setting = () => {
+export const Setting = () => { 
 
     const [isModalVisible, setIsModalVisible] = useState(false);
 

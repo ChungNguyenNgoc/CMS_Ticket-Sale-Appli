@@ -4,18 +4,12 @@ import './Home.css'
 import React, { useState, useEffect } from 'react';
 import moment from 'moment';
 import { Area } from '@ant-design/plots';
-import {ticketManage} from '../../../firebase/TicketManage';
-import {ticketChange} from '../../../firebase/TicketChange';
-import {setting} from '../../../firebase/Setting';
 
 
 const { Content } = Layout;
 const dateFormatList = ['DD/MM/YYYY', 'DD/MM/YY'];
 
 export const Home = () => {
-    console.log(ticketManage)
-    // console.log(ticketChange)
-    // console.log(setting)
     const DemoArea = () => {
         const [data, setData] = useState([]);
     
@@ -66,15 +60,7 @@ export const Home = () => {
             color: 'blue',
 
           },
-        ];
-
-        // const showColor: any = data.map((item) => {
-        //   var result = '';
-        //   if(item) {
-        //     result = item.color
-        //   }
-        //   return result;
-        // })
+        ]
 
         const config = {
           appendPadding: 10,

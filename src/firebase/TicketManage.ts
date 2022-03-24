@@ -32,5 +32,5 @@ export const ticketManage = async() => {
       .catch((err) => console.log(err));
 }
 
-console.log(ticketManage())
+// console.log(ticketManage())
 

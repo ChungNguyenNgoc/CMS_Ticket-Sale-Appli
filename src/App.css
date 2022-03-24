@@ -26,6 +26,61 @@
   row-gap: 8px;
 }
 
+.ant-picker-header-view {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #23221F;
+}
+
+.ant-picker-header-view button:hover {
+  color: #FF993C;
+  font-weight: inherit;
+}
+
+.ant-picker-content {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1E0D03;
+}
+
+.ant-picker-today-btn {
+  color: #FF993C;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner, .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner, .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+  color: #fff;
+  background: #FF993C;
+  border-radius: 12px;
+}
+
+.ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  border: none;
+  border-radius: 2px;
+  content: '';
+}
+
+.ant-picker-now-btn {
+  color: #FF993C;
+}
+
+.ant-btn-primary {
+  color: #fff;
+  border-color: #FF993C;
+  background: #FF993C;
+  text-shadow: 0 -1px 0 rgb(0 0 0 / 12%);
+  box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
+}
+
 .App {
   width: 1920px;
   height: 1080px;
