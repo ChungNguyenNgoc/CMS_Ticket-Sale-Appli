@@ -81,6 +81,172 @@
   box-shadow: 0 2px 0 rgb(0 0 0 / 5%);
 }
 
+.ant-tag-geekblue {
+  display: flex;
+  color: #1d39c4;
+  background: #f0f5ff;
+  border-color: 3px solid #919DBA;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 58%;
+  border-radius: 4px;
+  height: 31px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.ant-tag-green {
+  display: flex;
+  color: #03AC00;
+  background: #DEF7E0;
+  border: 3px solid #03AC00;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 68%;
+  border-radius: 4px;
+  height: 31px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.ant-tag-red {
+  display: flex;
+  color: #FD5959;
+  background: #F8EBE8;
+  border: 3px solid #FD5959;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 44%;
+  border-radius: 4px;
+  height: 31px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.ant-menu-inline .ant-menu-item, .ant-menu-inline .ant-menu-submenu-title {
+  width: 252px;
+  height: 56px;
+}
+
+.ant-modal-content {
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 16px;
+  box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%), 0 9px 28px 8px rgb(0 0 0 / 5%);
+  pointer-events: auto;
+}
+
+.ant-select-arrow {
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: absolute;
+  top: 50%;
+  right: 11px;
+  width: 12px;
+  height: 12px;
+  margin-top: -6px;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  pointer-events: none;
+  color: #FF993C;
+}
+
+.ant-picker {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: 'tnum', "tnum";
+  padding: 8px 12px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #A5A8B1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border 0.3s, box-shadow 0.3s;
+  width: 137px;
+  height: 40px;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  position: relative;
+  background-color: #fff;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border: 1px solid #A5A8B1;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 176px;
+  height: 40px;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ant-picker:hover, .ant-picker-focused {
+  border-color: none !important; 
+  border-right-width: 1px !important;
+}
+
+.ant-picker-input > input {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  min-width: 0;
+  padding: 4px 11px;
+  color: #A5A8B1;
+  font-size: 14px;
+  line-height: 1.5715;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  transition: all 0.3s;
+  flex: auto;
+  min-width: 1px;
+  height: auto;
+  padding: 0;
+  background: transparent;
+  border: 0;
+}
+
+.ant-select-selection-item {
+  flex: 1 1;
+  overflow: hidden;
+  font-weight: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #1E0D03;
+  opacity: 0.7;
+  margin: 0px 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
 .App {
   width: 1920px;
   height: 1080px;

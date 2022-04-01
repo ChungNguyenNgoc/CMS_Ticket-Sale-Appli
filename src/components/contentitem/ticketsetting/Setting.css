@@ -49,14 +49,14 @@
 
 .content-setting_category-filter {
     position: absolute;
-    height: 26px;
+    height: 48px;
     top: 14%;
     right: 11%;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 48px;
     display: flex;
     align-items: center;
     color: #FF993C;
@@ -66,18 +66,20 @@
     margin: 0px 10px;
     padding: 18px;
     border: 2px solid #FF993C;
+    border-radius: 8px;
+
 }
 
 .content-setting_category-export {
     position: absolute;
-    height: 26px;
+    height: 48px;
     top: 14%;
     right: 1%;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 48px;
     display: flex;
     align-items: center;
     color: #FF993C;
@@ -87,6 +89,8 @@
     margin: 0px 10px;
     padding: 18px;
     border: 2px solid #FF993C;
+    border-radius: 8px;
+
 }
 
 .content-setting_table {
@@ -105,14 +109,14 @@
 
 .content-setting_category-addticket {
     position: absolute;
-    height: 26px;
+    height: 48px;
     top: 14%;
     right: 1%;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 48px;
     display: flex;
     align-items: center;
     color: #fff;
@@ -123,6 +127,7 @@
     margin: 0px 10px;
     padding: 18px;
     border: 2px solid #FF993C;
+    border-radius: 8px;
 }
 
 .content-setting_modal-update {
@@ -209,7 +214,9 @@
     line-height: 20px;
     display: flex;
     align-items: center;
-    color: #1E0D03;
+    border: 1px solid #A5A8B1;
+    box-sizing: border-box;
+    border-radius: 8px;
 }
 
 .content-setting_modal-update_eventname {
@@ -226,6 +233,9 @@
     display: flex;
     align-items: center;
     color: #1E0D03;
+    border: 1px solid #A5A8B1;
+    box-sizing: border-box;
+    border-radius: 8px;
 }
 
 .content-setting_modal-update_fromdate {
@@ -569,36 +579,40 @@
     padding: 20px;
     position: absolute;
     width: 74px;
-    height: 26px;
+    height: 48px;
     left: 38%;
     top: 90%;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 48px;
     display: flex;
     align-items: center;
     color: #FF993C;
     border-color: #FF993C;
+    border-radius: 8px;
+
 }
 
 .content-ticketmanage_modal-update_btnsave {
     padding: 20px;
     position: absolute;
     width: 74px;
-    height: 26px;
+    height: 48px;
     left: 50%;
     top: 90%;
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 48px;
     display: flex;
     align-items: center;
     color: #fff;
     border-color: #FF993C;
     background-color: #FF993C;
+    border-radius: 8px;
+
 }
 

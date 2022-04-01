@@ -163,6 +163,17 @@ export const TicketManage = () => {
       checkInGate: "Cổng 1",
       changeDate: "",
     },
+    {
+      stt: "1",
+      bookingCode: "ALT20210501",
+      ticketNumber: "123456789034",
+      eventName: "Hội chợ triển lãm tiêu dùng 2021",
+      tags: ["Hết hạn"],
+      date: "14/04/2021",
+      releaseDate: "14/04/2021",
+      checkInGate: "Cổng 1",
+      changeDate: "",
+    },
   ];
 
   const columns = [
@@ -295,7 +306,7 @@ export const TicketManage = () => {
           </div>
           <Table
             className="content-ticketmanage_table"
-            dataSource={tickets}
+            dataSource={dataSource}
             columns={columns}
           />
 
