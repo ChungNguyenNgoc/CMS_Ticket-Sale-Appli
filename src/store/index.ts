@@ -10,4 +10,4 @@ const store = createStore (rootReducer, applyMiddleware(thunk))
 
 export type RootState = ReturnType<typeof rootReducer>
 
-export default store
+export default store;

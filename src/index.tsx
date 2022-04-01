@@ -14,8 +14,8 @@ import { Content } from "antd/lib/layout/layout";
 import store from "./store";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
+  <Provider store={store}>
+    <React.StrictMode>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<App />}>
@@ -36,8 +36,8 @@ ReactDOM.render(
           </Route>
         </Routes>
       </BrowserRouter>
-    </Provider>
-  </React.StrictMode>,
+    </React.StrictMode>
+  </Provider>,
   document.getElementById("root")
 );
 
