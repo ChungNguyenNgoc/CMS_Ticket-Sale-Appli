@@ -306,7 +306,7 @@ export const TicketManage = () => {
           </div>
           <Table
             className="content-ticketmanage_table"
-            dataSource={dataSource}
+            dataSource={tickets}
             columns={columns}
           />
 
